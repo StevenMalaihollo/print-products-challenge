@@ -1,0 +1,998 @@
+{
+  "sku": "businesscards",
+  "title": "Business cards",
+	"properties": [
+		{
+			"slug": "fold",
+			"title": "Fold",
+			"options": [
+				{
+					"slug": "no_fold",
+					"name": "No fold"
+				},
+				{
+					"slug": "single_4",
+					"name": "Single 4"
+				},
+				{
+					"slug": "singlehorizontal_4",
+					"name": "Single Horizontal Fold"
+				}
+			],
+			"type": "radio"
+		},
+		{
+			"slug": "size",
+			"title": "Size",
+			"options": [
+				{
+					"slug": "bc",
+					"name": "Business card 85 x 55 mm (horizontal)",
+					"width": 85,
+					"height": 55
+				},
+				{
+					"slug": "bc_portrait",
+					"name": "55 x 85 mm (vertical)",
+					"width": 55,
+					"height": 85
+				},
+				{
+					"slug": "bc_plus",
+					"name": "90 x 50 mm (horizontal)",
+					"width": 90,
+					"height": 50
+				},
+				{
+					"slug": "bc_plus_portrait",
+					"name": "50 x 90 mm (vertical)",
+					"width": 50,
+					"height": 90
+				},
+				{
+					"slug": "custom",
+					"nullable": false,
+					"customSizes": {
+						"minHeight": 40,
+						"minWidth": 40,
+						"maxHeight": 299,
+						"maxWidth": 424
+					}
+				}
+			]
+		},
+		{
+			"slug": "printtype",
+			"title": "Printtype",
+			"options": [
+				{
+					"slug": "10",
+					"name": "1/0 PMS"
+				},
+				{
+					"slug": "20",
+					"name": "2/0 PMS"
+				},
+				{
+					"slug": "30",
+					"name": "3/0 PMS"
+				},
+				{
+					"slug": "40",
+					"name": "4/0 Full colour"
+				},
+				{
+					"slug": "11",
+					"name": "1/1 PMS"
+				},
+				{
+					"slug": "22",
+					"name": "2/2 PMS"
+				},
+				{
+					"slug": "33",
+					"name": "3/3 PMS"
+				},
+				{
+					"slug": "44",
+					"name": "4/4 Full colour"
+				},
+				{
+					"slug": "50_full_color_plus_white",
+					"name": "5/0 Full colour + white"
+				},
+				{
+					"slug": "55_full_color_plus_white",
+					"name": "5/5 Full colour + white"
+				}
+			]
+		},
+		{
+			"slug": "material",
+			"title": "Material",
+			"options": [
+				{
+					"slug": "300gr_gesatineerd_mc",
+					"name": "300 g/m² gloss"
+				},
+				{
+					"slug": "350gr_gesatineerd_mc",
+					"name": "350 g/m² gloss"
+				},
+				{
+					"slug": "400gr_gesatineerd_mc",
+					"name": "400 g/m² gloss"
+				},
+				{
+					"slug": "300gr_silk_mc",
+					"name": "300 g/m² silk"
+				},
+				{
+					"slug": "350gr_silk_mc",
+					"name": "350 g/m² silk "
+				},
+				{
+					"slug": "400gr_silk_mc",
+					"name": "400 g/m² silk"
+				},
+				{
+					"slug": "300gr_tintoretto_gesso",
+					"name": "300 g/m² Tintoretto Gesso"
+				},
+				{
+					"slug": "280gr_linnen",
+					"name": "280 g/m² Constellation Snow (linen)"
+				},
+				{
+					"slug": "300gr_metallic_pearl",
+					"name": "300 g/m² Sirio metallic pearl"
+				},
+				{
+					"slug": "350gr_metallic_white",
+					"name": "350 g/m² Sirio metallic white"
+				},
+				{
+					"slug": "300gr_metallic_silver",
+					"name": "300 g/m² Sirio metallic silver"
+				},
+				{
+					"slug": "300gr_metallic_gold",
+					"name": "300 g/m² Sirio metallic gold"
+				},
+				{
+					"slug": "290gr_sirio_color_nero",
+					"name": "290 g/m² Sirio Colour Nero"
+				},
+				{
+					"slug": "295gr_paperwise_earth_pact_natural",
+					"name": "295 g/m² Paperwise® Earth Pact Natural"
+				},
+				{
+					"slug": "300gr_synaps",
+					"name": "300 g/m² Synaps® (Rip-proof and water proof) "
+				},
+				{
+					"slug": "300gr_yupo_blue_ypi",
+					"name": "234 g/m² YUPOBlue® - rip-proof, waterproof"
+				},
+				{
+					"slug": "350gr_yupo_blue_ypi",
+					"name": "276 g/m² YUPOBlue® - rip-proof, waterproof"
+				},
+				{
+					"slug": "400gr_yupo",
+					"name": "319 g/m² YUPOBlue® - rip-proof, waterproof"
+				},
+				{
+					"slug": "300gr_recystar",
+					"name": "300 g/m² BalancePure®"
+				},
+				{
+					"slug": "300gr_biotop",
+					"name": "300 g/m² Bio Top 3® natural"
+				},
+				{
+					"slug": "300gr_recystar_nature",
+					"name": "300 g/m² RecyStar® Nature"
+				},
+				{
+					"slug": "290gr_kraft_muskat",
+					"name": "290gr kraft muskat"
+				},
+				{
+					"slug": "300gr_hvo",
+					"name": "300 g/m² uncoated (writable)"
+				},
+				{
+					"slug": "300gr_hvo_nk",
+					"name": "300 g/m² uncoated offset natural carton"
+				},
+				{
+					"slug": "350gr_hvo",
+					"name": "350 g/m² uncoated (writable)"
+				},
+				{
+					"slug": "350gr_hvo_nk",
+					"name": "350 g/m² uncoated offset natural carton"
+				},
+				{
+					"slug": "400gr_hvo_nk",
+					"name": "400 g/m² offset (writable) natural cardboard"
+				},
+				{
+					"slug": "300gr_sbs_symbol_card",
+					"name": "300 g/m² Symbol Card one-sided coated sulphate cardboard"
+				},
+				{
+					"slug": "300gr_sbs",
+					"name": "300 g/m² MultiCard® single sided sulphate board"
+				},
+				{
+					"slug": "350gr_sbs",
+					"name": "350 g/m² MultiCard® single sided sulphate board "
+				},
+				{
+					"slug": "350gr_sbd",
+					"name": "350 g/m² MultiCard® double sided sulphate board "
+				},
+				{
+					"slug": "400gr_sbd",
+					"name": "400 g/m² double-sided coated sulphate carton"
+				},
+				{
+					"slug": "300gr_cotton_max_white",
+					"name": "300 g/m² Gmund Cotton Max White"
+				},
+				{
+					"slug": "300gr_cotton_linen_cream",
+					"name": "300 g/m² Gmund Cotton Linen Cream"
+				},
+				{
+					"slug": "300gr_cotton_gentlemen_blue",
+					"name": "300 g/m² Gmund Cotton Gentlemen Blue"
+				},
+				{
+					"slug": "250gr_yupo",
+					"name": "200 g/m² YUPOBlue® - rip-proof, waterproof"
+				}
+			]
+		},
+		{
+			"slug": "spot_finish",
+			"title": "Spot finish",
+			"options": [
+				{
+					"slug": "none",
+					"name": "None"
+				},
+				{
+					"slug": "foil_gold",
+					"name": "Gold foil"
+				},
+				{
+					"slug": "foil_silver",
+					"name": "Silver foil"
+				},
+				{
+					"slug": "foil_rose",
+					"name": "Rose gold foil"
+				},
+				{
+					"slug": "foil_copper",
+					"name": "Copper foil"
+				},
+				{
+					"slug": "foil_glitter",
+					"name": "Glitter foil"
+				},
+				{
+					"slug": "foil_rainbow",
+					"name": "Rainbow foil"
+				},
+				{
+					"slug": "partial_gloss",
+					"name": "Partial Gloss"
+				},
+				{
+					"slug": "embossed_partial_gloss_40",
+					"name": "Embossed partial gloss (40 μm)"
+				},
+				{
+					"slug": "embossed_partial_gloss_80",
+					"name": "Embossed partial gloss (80 μm)"
+				}
+			]
+		},
+		{
+			"slug": "spot_finish_back",
+			"title": "Spot finish backside",
+			"options": [
+				{
+					"slug": "none",
+					"name": "none"
+				},
+				{
+					"slug": "foil_gold",
+					"name": "Foil gold"
+				},
+				{
+					"slug": "foil_silver",
+					"name": "Foil silver"
+				},
+				{
+					"slug": "foil_rose",
+					"name": "Foil rose"
+				},
+				{
+					"slug": "foil_copper",
+					"name": "Foil copper"
+				},
+				{
+					"slug": "foil_glitter",
+					"name": "Foil glitter"
+				},
+				{
+					"slug": "foil_rainbow",
+					"name": "Foil rainbow"
+				},
+				{
+					"slug": "partial_gloss",
+					"name": "Partial Gloss"
+				},
+				{
+					"slug": "embossed_partial_gloss_40",
+					"name": "Embossed partial gloss 40"
+				},
+				{
+					"slug": "embossed_partial_gloss_80",
+					"name": "Embossed partial gloss 80"
+				}
+			]
+		},
+		{
+		  "slug": "copies",
+		  "title": "Copies",
+		  "options": [
+			{
+			  "slug": 25,
+			  "name": "25",
+				"type": "digital"
+			},
+			{
+			  "slug": 50,
+			  "name": "50",
+				"type": "digital"
+			},
+			{
+			  "slug": 100,
+			  "name": "100",
+				"type": "digital"
+			},
+			{
+			  "slug": 250,
+			  "name": "250",
+				"type": "digital"
+			},
+			{
+			  "slug": 500,
+			  "name": "500",
+				"type": "digital"
+			},
+			{
+			  "slug": 1000,
+			  "name": "1000",
+				"type": "digital"
+			},
+			{
+			  "slug": 25,
+			  "name": "25",
+			  "type": "inkjet"
+			},
+			{
+			  "slug": 50,
+			  "name": "50",
+			  "type": "inkjet"
+			},
+			{
+			  "slug": 100,
+			  "name": "100",
+			  "type": "inkjet"
+			},
+			{
+			  "slug": 250,
+			  "name": "250",
+			  "type": "inkjet"
+			},
+			{
+			  "slug": 500,
+			  "name": "500",
+			  "type": "inkjet"
+			},
+			{
+			  "slug": 1000,
+			  "name": "1000",
+			  "type": "inkjet"
+			},
+			{
+				"slug": 10000,
+				"name": "10000",
+				"type": "offset"
+			},
+			{
+				"slug": 20000,
+				"name": "20000",
+				"type": "offset"
+			},
+			{
+				"slug": 30000,
+				"name": "30000",
+				"type": "offset"
+			},
+			{
+				"slug": 40000,
+				"name": "40000",
+				"type": "offset"
+			},
+			{
+				"slug": 50000,
+				"name": "50000",
+				"type": "offset"
+			}
+		  ]
+		},
+		{
+			"slug": "clean_cut",
+			"title": "Clean cut",
+			"options": [
+				{
+					"slug": "yes",
+					"name": "Yes"
+				},
+				{
+					"slug": "no",
+					"name": "No"
+				}
+			]
+		},
+		{
+			"slug": "rounded_corners",
+			"title": "Rounded corners",
+			"options": [
+				{
+					"slug": "none",
+					"name": "None"
+				},
+				{
+					"slug": "3,5_mm_radius",
+					"name": "3,5 mm radius"
+				},
+				{
+					"slug": "7_mm_radius",
+					"name": "7 mm radius"
+				}
+			]
+		},
+		{
+			"slug": "drillholes",
+			"title": "Drillholes",
+			"options": [
+				{
+					"slug": "none",
+					"name": "None"
+				},
+				{
+					"slug": "one_drillhole_3mm",
+					"name": "one drillhole 3mm"
+				},
+				{
+					"slug": "two_drillholes_3mm",
+					"name": "two drillholes 3mm"
+				},
+				{
+					"slug": "one_drillhole_4mm",
+					"name": "One drillhole 4mm"
+				},
+				{
+					"slug": "two_drillholes_4mm",
+					"name": "two drillholes 4mm"
+				},
+				{
+					"slug": "one_drillhole_5mm",
+					"name": "One drillhole 5mm"
+				},
+				{
+					"slug": "two_drillholes_5mm",
+					"name": "two drillholes 5mm"
+				},
+				{
+					"slug": "one_drillhole",
+					"name": "One Drillhole (6 mm)"
+				},
+				{
+					"slug": "two_drillholes",
+					"name": "Two Drillholes (6 mm)"
+				}
+			]
+		},
+		{
+			"slug": "variable_creasing_line",
+			"title": "Variable creasing line parallel",
+			"options": [
+				{
+					"slug": "none",
+					"name": "No creasing"
+				},
+				{
+					"slug": "1",
+					"name": "1"
+				},
+				{
+					"slug": "2",
+					"name": "2"
+				},
+				{
+					"slug": "3",
+					"name": "3"
+				},
+				{
+					"slug": "4",
+					"name": "4"
+				},
+				{
+					"slug": "5",
+					"name": "5"
+				}
+			]
+		},
+		{
+			"slug": "die_cut",
+			"title": "Die cut",
+			"options": [
+				{
+					"slug": "yes",
+					"name": "Yes"
+				},
+				{
+					"slug": "no",
+					"name": "No"
+				}
+			]
+		},
+		{
+			"slug": "perforation",
+			"title": "Perforation parallel",
+			"options": [
+				{
+					"slug": "none",
+					"name": "No perforation"
+				},
+				{
+					"slug": "1_perforation_line",
+					"name": "1 perforation line"
+				}
+			]
+		},
+		{
+			"slug": "bundle",
+			"title": "Bundle",
+			"options": [
+				{
+					"slug": "bundle_per_50",
+					"name": "Bundle_per_50"
+				},
+				{
+					"slug": "bundle_per_100",
+					"name": "Bundle per 100"
+				}
+			]
+		},
+		{
+			"slug": "businesscard_creasing",
+			"title": "Businesscard creasing",
+			"options": [
+				{
+					"slug": "yes",
+					"name": "yes"
+				},
+				{
+					"slug": "no",
+					"name": "no"
+				}
+			]
+		},
+		{
+			"slug": "folded",
+			"title": "Folded",
+			"options": [
+				{
+					"slug": "no",
+					"name": "no"
+				},
+				{
+					"slug": "yes",
+					"name": "yes"
+				}
+			]
+		},
+		{
+			"slug": "printingmethod",
+			"title": "Printingmethod",
+			"options": [
+				{
+					"slug": "digital",
+					"name": "HP Indigo digital"
+				},
+				{
+					"slug": "inkjet",
+					"name": "Inkjet"
+				},
+				{
+					"slug": "offset",
+					"name": "Offset"
+				}
+			]
+		}
+	],
+	"excludes": [
+		[
+			{
+				"options": [
+					"foil_glitter",
+					"foil_gold",
+					"foil_rainbow",
+					"foil_copper",
+					"foil_rose",
+					"foil_silver",
+					"partial_gloss",
+					"embossed_partial_gloss_40",
+					"embossed_partial_gloss_80"
+				],
+				"property": "spot_finish"
+			},
+			{
+				"options": [
+					"350gr_hvo",
+					"300gr_hvo",
+					"540gr_two_layer_multiloft_kraft",
+					"480gr_two_layer_multiloft_ultra_white",
+					"540gr_two_layer_multiloft_black",
+					"480gr_two_layer_multiloft_white",
+					"810gr_three_layer_multiloft_kraft",
+					"810gr_three_layer_multiloft_black",
+					"750gr_three_layer_multiloft_white",
+					"750gr_three_layer_multiloft_ultra_white",
+					"350gr_hvo_nk",
+					"400gr_hvo_nk",
+					"300gr_recystar",
+					"300gr_recystar_nature",
+					"300gr_cotton_max_white",
+					"300gr_cotton_linen_cream",
+					"300gr_cotton_new_grey",
+					"300gr_cotton_gentlemen_blue",
+					"290gr_kraft_muskat",
+					"440gr_kraft_muskat",
+					"350gr_atelier",
+					"300gr_hvo_nk"
+				],
+				"property": "material"
+			}
+		],
+		[
+			{
+				"options": [],
+				"property": "spot_finish"
+			},
+			{
+				"options": [
+					"350gr_hvo",
+					"300gr_hvo",
+					"300gr_hvo_nk",
+					"350gr_hvo_nk",
+					"400gr_hvo_nk",
+					"350gr_atelier"
+				],
+				"property": "material"
+			}
+		],
+		[
+			{
+				"options": [
+					"foil_glitter",
+					"foil_gold",
+					"foil_rainbow",
+					"foil_copper",
+					"foil_rose",
+					"foil_silver",
+					"embossed_partial_gloss_40",
+					"embossed_partial_gloss_80"
+				],
+				"property": "spot_finish"
+			},
+			{
+				"options": [
+					"offset"
+				],
+				"property": "printingmethod"
+			}
+		],
+		[
+			{
+				"options": [
+					"300gr_recycled",
+					"300gr_metallic_white",
+					"300gr_metallic_pearl",
+					"300gr_metallic_silver",
+					"300gr_metallic_gold",
+					"280gr_kraft",
+					"381gr_kraft",
+					"300gr_yupo_blue_ypi",
+					"350gr_yupo_blue_ypi",
+					"250gr_sirio_materica_clay",
+					"290gr_sirio_color_pietra",
+					"290gr_sirio_color_nero",
+					"500gr_sbd",
+					"400gr_yupo",
+					"295gr_paperwise_earth_pact_natural",
+					"300gr_conqueror_vergé_(crème)_high_white",
+					"300gr_conqueror_vergé_diamond_white",
+					"200gr_yupo",
+					"300gr_recystar",
+					"300gr_recystar_nature",
+					"300gr_cotton_max_white",
+					"300gr_cotton_linen_cream",
+					"300gr_cotton_new_grey",
+					"300gr_cotton_gentlemen_blue",
+					"300gr_hvo_nk",
+					"350gr_hvo",
+					"400gr_hvo_nk",
+					"290gr_kraft_muskat",
+					"440gr_kraft_muskat",
+					"350gr_atelier",
+					"300gr_biotop",
+					"250gr_yupo",
+					"400gr_gesatineerd_mc",
+					"300gr_synaps",
+					"350gr_hvo_nk"
+				],
+				"property": "material"
+			},
+			{
+				"options": [
+					"group_foils",
+					"foil_gold",
+					"foil_glitter",
+					"foil_rainbow",
+					"foil_copper",
+					"foil_rose",
+					"foil_silver",
+					"group_partial_gloss",
+					"embossed_partial_gloss_40",
+					"embossed_partial_gloss_80",
+					"partial_gloss"
+				],
+				"property": "spot_finish"
+			}
+		],
+		[
+			{
+				"options": [
+					"250gr_tintoretto_gesso",
+					"280gr_constalations_snow_(linnen)",
+					"280gr_kraftpapier",
+					"300gr_ice_silver_metallic",
+					"300gr_kraftpapier",
+					"500gr_sbd",
+					"280gr_kraft",
+					"381gr_kraft",
+					"300gr_tintoretto_gesso",
+					"280gr_linnen",
+					"300gr_metallic_white",
+					"350gr_metallic_white",
+					"300gr_metallic_pearl",
+					"300gr_metallic_gold",
+					"300gr_yupo_blue_ypi",
+					"350gr_yupo_blue_ypi",
+					"350gr_sbs",
+					"760gr_pvc",
+					"350gr_silk_mc",
+					"300gr_metallic_silver",
+					"250gr_sirio_materica_clay",
+					"290gr_sirio_color_pietra",
+					"290gr_sirio_color_nero",
+					"400gr_yupo",
+					"295gr_paperwise_earth_pact_natural",
+					"300gr_silk_mc",
+					"200gr_yupo",
+					"300gr_sbs_symbol_card",
+					"300gr_cotton_gentlemen_blue",
+					"300gr_cotton_new_grey",
+					"300gr_cotton_linen_cream",
+					"300gr_cotton_max_white",
+					"540gr_two_layer_multiloft_kraft",
+					"480gr_two_layer_multiloft_ultra_white",
+					"480gr_two_layer_multiloft_white",
+					"540gr_two_layer_multiloft_black",
+					"810gr_three_layer_multiloft_kraft",
+					"810gr_three_layer_multiloft_black",
+					"750gr_three_layer_multiloft_white",
+					"750gr_three_layer_multiloft_ultra_white",
+					"350gr_sbs_invercote",
+					"400gr_hvo_nk",
+					"300gr_synaps",
+					"350gr_atelier",
+					"290gr_kraft_muskat",
+					"440gr_kraft_muskat",
+					"170gr_gesatineerd_mc",
+					"250gr_yupo",
+					"300gr_sbs_invercote",
+					"400gr_gesatineerd_mc",
+					"350gr_hvo_nk",
+					"350gr_hvo",
+					"300gr_biotop",
+					"300gr_recystar"
+				],
+				"property": "material"
+			},
+			{
+				"options": [
+					"offset"
+				],
+				"property": "printingmethod"
+			}
+		],
+		[
+			{
+				"options": [
+					"50_full_color_plus_white",
+					"55_full_color_plus_white"
+				],
+				"property": "printtype"
+			},
+			{
+				"options": [
+					"300gr_gesatineerd_mc",
+					"350gr_gesatineerd_mc",
+					"300gr_silk_mc",
+					"400gr_gesatineerd_mc",
+					"350gr_silk_mc",
+					"400gr_silk_mc",
+					"300gr_recycled",
+					"300gr_biotop",
+					"300gr_sbs",
+					"350gr_sbd",
+					"500gr_sbd",
+					"300gr_tintoretto_gesso",
+					"280gr_linnen",
+					"300gr_metallic_white",
+					"350gr_metallic_white",
+					"300gr_metallic_pearl",
+					"300gr_yupo_blue_ypi",
+					"350gr_yupo_blue_ypi",
+					"400gr_sbd",
+					"400gr_yupo",
+					"300gr_conqueror_vergé_(crème)_high_white",
+					"300gr_conqueror_vergé_diamond_white",
+					"300gr_hvo_nk",
+					"350gr_hvo_nk",
+					"200gr_yupo",
+					"300gr_recystar",
+					"300gr_recystar_nature",
+					"300gr_sbs_symbol_card",
+					"350gr_sbs",
+					"400gr_hvo_nk",
+					"250gr_yupo",
+					"300gr_synaps",
+					"300gr_hvo",
+					"350gr_hvo",
+					"300gr_cotton_max_white",
+					"300gr_cotton_linen_cream",
+					"300gr_cotton_gentlemen_blue"
+				],
+				"property": "material"
+			}
+		],
+		[
+			{
+				"options": [
+					"offset"
+				],
+				"property": "printingmethod"
+			},
+			{
+				"options": [
+					"50_full_color_plus_white",
+					"55_full_color_plus_white"
+				],
+				"property": "printtype"
+			}
+		],
+		[
+			{
+				"options": [
+					"290gr_sirio_color_nero",
+					"540gr_two_layer_multiloft_black",
+					"810gr_three_layer_multiloft_black"
+				],
+				"property": "material"
+			},
+			{
+				"options": [
+					"44",
+					"40"
+				],
+				"property": "printtype"
+			}
+		],
+		[
+			{
+				"options": [
+					"10",
+					"20",
+					"30",
+					"11",
+					"22",
+					"33"
+				],
+				"property": "printtype"
+			},
+			{
+				"options": [
+					"300gr_silk_mc",
+					"350gr_silk_mc",
+					"300gr_sbs_symbol_card",
+					"400gr_gesatineerd_mc",
+					"400gr_silk_mc",
+					"300gr_tintoretto_gesso",
+					"280gr_linnen",
+					"280gr_kraft",
+					"540gr_two_layer_multiloft_kraft",
+					"810gr_three_layer_multiloft_kraft",
+					"300gr_metallic_white",
+					"300gr_metallic_pearl",
+					"350gr_metallic_white",
+					"300gr_metallic_silver",
+					"300gr_metallic_gold",
+					"200gr_yupo",
+					"300gr_yupo_blue_ypi",
+					"290gr_sirio_color_pietra",
+					"250gr_sirio_materica_clay",
+					"290gr_sirio_color_nero",
+					"295gr_paperwise_earth_pact_natural",
+					"400gr_yupo",
+					"300gr_synaps",
+					"350gr_sbs_invercote",
+					"300gr_cotton_max_white",
+					"300gr_cotton_linen_cream",
+					"300gr_cotton_new_grey",
+					"300gr_cotton_gentlemen_blue",
+					"480gr_two_layer_multiloft_ultra_white",
+					"480gr_two_layer_multiloft_white",
+					"540gr_two_layer_multiloft_black",
+					"750gr_three_layer_multiloft_ultra_white",
+					"750gr_three_layer_multiloft_white",
+					"810gr_three_layer_multiloft_black",
+					"500gr_sbd",
+					"290gr_kraft_muskat",
+					"440gr_kraft_muskat",
+					"350gr_atelier",
+					"250gr_yupo"
+				],
+				"property": "material"
+			}
+		],
+		[
+			{
+				"options": [
+					"partial_gloss"
+				],
+				"property": "spot_finish"
+			},
+			{
+				"options": [
+					"offset"
+				],
+				"property": "printingmethod"
+			}
+		]
+	]
+}
