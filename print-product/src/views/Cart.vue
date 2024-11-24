@@ -16,7 +16,7 @@ const { cart } = cartStore
         <div
           v-for="(selectedProduct, index) in cart"
           :key="index"
-          class="w-full px-4 md:w-1/2 lg:w-1/3"
+          class="w-full p-4 md:w-1/2 lg:w-1/3"
         >
           <SelectionCard class="px-2" :selectedProduct="selectedProduct" />
         </div>

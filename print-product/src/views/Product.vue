@@ -35,7 +35,7 @@ function addToCart() {
   if (!selected.value) {
     return
   }
-  cartStore.saveSelection(selected.value as SelectedProduct)
+  cartStore.saveSelection(selected.value)
   router.push('/cart')
 }
 </script>
