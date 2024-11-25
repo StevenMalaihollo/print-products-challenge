@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { useCartStore } from './stores/cart'
-import { ref, watch } from 'vue'
-import VueSelect from 'vue3-select-component'
 import { useProductsStore } from './stores/products'
+import { ref, watch } from 'vue'
+import LanguageSelector from './components/LanguageSelector.vue'
 
 const cartStore = useCartStore()
 const productsStore = useProductsStore()
@@ -20,25 +20,14 @@ watch(language, (newLanguage) => {
     loadProductFromFile('../data/flyers.json')
     loadProductFromFile('../data/posters.json')
   } else if (newLanguage === 'no') {
-    loadProductFromFile('../dataNorwegian/businesscards.json')
+    loadProductFromFile('../data/norwegian/businesscards.json')
   }
 })
 </script>
 
 <template>
-  <div v-if="!language" class="flex justify-center py-8">
-    <div class="flex flex-col gap-4 max-w-2xl">
-      <img class="logo logo-spin" src="@/printlogo.svg" width="125" height="125" />
-      <VueSelect
-        class="min-w-48"
-        v-model="language"
-        :options="[
-          { value: 'en', label: 'English' },
-          { value: 'no', label: 'Norwegian' },
-        ]"
-        placeholder="Choose a language"
-      />
-    </div>
+  <div v-if="!language">
+    <LanguageSelector v-model:language="language" />
   </div>
   <template v-else>
     <header>

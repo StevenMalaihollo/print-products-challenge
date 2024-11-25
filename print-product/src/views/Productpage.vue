@@ -17,12 +17,6 @@ const selected = ref<SelectedProduct | null>(null)
 
 const product = computed(() => products.find((product) => product.sku === route.params.sku))
 
-const imagePaths = {
-  posters: new URL('@/assets/posters.jpg', import.meta.url).href,
-  businesscards: new URL('@/assets/businesscards.jpg', import.meta.url).href,
-  flyers: new URL('@/assets/flyers.png', import.meta.url).href,
-} as Record<string, string>
-
 onMounted(() => {
   loading.value = true
   setTimeout(() => {
@@ -41,6 +35,12 @@ function addToCart() {
   cartStore.saveSelection(selected.value)
   router.push('/cart')
 }
+
+const imagePaths = {
+  posters: new URL('@/assets/posters.jpg', import.meta.url).href,
+  businesscards: new URL('@/assets/businesscards.jpg', import.meta.url).href,
+  flyers: new URL('@/assets/flyers.png', import.meta.url).href,
+} as Record<string, string>
 </script>
 
 <template>
