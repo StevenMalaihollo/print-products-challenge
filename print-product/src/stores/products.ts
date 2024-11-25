@@ -9,6 +9,9 @@ export const useProductsStore = defineStore('products', () => {
   function addProduct(newProduct: Product) {
     products.value.push(newProduct)
   }
+  function resetProducts() {
+    products.value = []
+  }
 
   async function loadProductFromFile(path: string) {
     try {
@@ -19,13 +22,11 @@ export const useProductsStore = defineStore('products', () => {
     }
   }
 
-  loadProductFromFile('../data/businesscards.json')
-  loadProductFromFile('../data/flyers.json')
-  loadProductFromFile('../data/posters.json')
-
   return {
     products,
     productCount,
+    resetProducts,
+    loadProductFromFile,
     addProduct,
   }
 })

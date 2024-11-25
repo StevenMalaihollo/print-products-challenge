@@ -12,6 +12,7 @@ const cartStore = useCartStore()
 const productsStore = useProductsStore()
 const { products } = productsStore
 
+const loading = ref(false)
 const selected = ref<SelectedProduct | null>(null)
 
 const product = computed(() => products.find((product) => product.sku === route.params.sku))
@@ -23,10 +24,12 @@ const imagePaths = {
 } as Record<string, string>
 
 onMounted(() => {
+  loading.value = true
   setTimeout(() => {
     if (!product.value) {
       return router.push('/')
     }
+    loading.value = false
     selected.value = new SelectedProduct(product.value)
   }, 500)
 })
@@ -41,8 +44,8 @@ function addToCart() {
 </script>
 
 <template>
-  <div v-if="!product">
-    <h1>The selected product is not available</h1>
+  <div v-if="loading || !product" class="p-10">
+    <img class="logo logo-spin" src="@/printlogo.svg" width="80" height="80" />
   </div>
   <div v-else-if="selected" class="flex justify-between gap-x-2 md:gap-x-6">
     <div class="p-4 md:p-10">
