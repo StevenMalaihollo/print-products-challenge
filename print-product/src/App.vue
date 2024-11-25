@@ -1,23 +1,48 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { useCartStore } from './stores/cart'
+import { useProductsStore } from './stores/products'
+import { ref, watch } from 'vue'
+import LanguageSelector from './components/LanguageSelector.vue'
 
 const cartStore = useCartStore()
+const productsStore = useProductsStore()
+
+const language = ref<null | 'en' | 'no'>(null)
+
+const { resetProducts, loadProductFromFile } = productsStore
+
+watch(language, (newLanguage) => {
+  resetProducts()
+
+  if (newLanguage === 'en') {
+    loadProductFromFile('../data/businesscards.json')
+    loadProductFromFile('../data/flyers.json')
+    loadProductFromFile('../data/posters.json')
+  } else if (newLanguage === 'no') {
+    loadProductFromFile('../data/norwegian/businesscards.json')
+  }
+})
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/printlogo.svg" width="125" height="125" />
+  <div v-if="!language">
+    <LanguageSelector v-model:language="language" />
+  </div>
+  <template v-else>
+    <header>
+      <img alt="Vue logo" class="logo" src="@/printlogo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/cart">My cart ({{ cartStore.cartTotalQuantity }})</RouterLink>
-      </nav>
-    </div>
-  </header>
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/cart">My cart ({{ cartStore.cartTotalQuantity }})</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </template>
 </template>
 
 <style scoped>

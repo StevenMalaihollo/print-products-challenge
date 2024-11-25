@@ -109,3 +109,18 @@ strong {
 em {
   font-style: italic;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-spin {
+  display: block;
+  margin: 0 auto 2rem;
+  animation: spin 6s linear infinite; /* Spins continuously every 6 seconds */
+}

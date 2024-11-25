@@ -1,0 +1,635 @@
+{
+  "sku": "businesscards",
+  "title": "Visittkort",
+  "properties": [
+    {
+      "slug": "fold",
+      "title": "Brett",
+      "options": [
+        {
+          "slug": "no_fold",
+          "name": "Ingen brett"
+        },
+        {
+          "slug": "single_4",
+          "name": "Enkel 4"
+        },
+        {
+          "slug": "singlehorizontal_4",
+          "name": "Enkel horisontal brett"
+        }
+      ],
+      "type": "radio"
+    },
+    {
+      "slug": "size",
+      "title": "Størrelse",
+      "options": [
+        {
+          "slug": "bc",
+          "name": "Visittkort 85 x 55 mm (horisontal)",
+          "width": 85,
+          "height": 55
+        },
+        {
+          "slug": "bc_portrait",
+          "name": "55 x 85 mm (vertikal)",
+          "width": 55,
+          "height": 85
+        },
+        {
+          "slug": "bc_plus",
+          "name": "90 x 50 mm (horisontal)",
+          "width": 90,
+          "height": 50
+        },
+        {
+          "slug": "bc_plus_portrait",
+          "name": "50 x 90 mm (vertikal)",
+          "width": 50,
+          "height": 90
+        },
+        {
+          "slug": "custom",
+          "nullable": false,
+          "customSizes": {
+            "minHeight": 40,
+            "minWidth": 40,
+            "maxHeight": 299,
+            "maxWidth": 424
+          }
+        }
+      ]
+    },
+    {
+      "slug": "printtype",
+      "title": "Trykktype",
+      "options": [
+        {
+          "slug": "10",
+          "name": "1/0 PMS"
+        },
+        {
+          "slug": "20",
+          "name": "2/0 PMS"
+        },
+        {
+          "slug": "30",
+          "name": "3/0 PMS"
+        },
+        {
+          "slug": "40",
+          "name": "4/0 Fullfarge"
+        },
+        {
+          "slug": "11",
+          "name": "1/1 PMS"
+        },
+        {
+          "slug": "22",
+          "name": "2/2 PMS"
+        },
+        {
+          "slug": "33",
+          "name": "3/3 PMS"
+        },
+        {
+          "slug": "44",
+          "name": "4/4 Fullfarge"
+        },
+        {
+          "slug": "50_full_color_plus_white",
+          "name": "5/0 Fullfarge + hvit"
+        },
+        {
+          "slug": "55_full_color_plus_white",
+          "name": "5/5 Fullfarge + hvit"
+        }
+      ]
+    },
+    {
+      "slug": "material",
+      "title": "Materiale",
+      "options": [
+        {
+          "slug": "300gr_gesatineerd_mc",
+          "name": "300 g/m² glanset"
+        },
+        {
+          "slug": "350gr_gesatineerd_mc",
+          "name": "350 g/m² glanset"
+        },
+        {
+          "slug": "400gr_gesatineerd_mc",
+          "name": "400 g/m² glanset"
+        },
+        {
+          "slug": "300gr_silk_mc",
+          "name": "300 g/m² silkematt"
+        },
+        {
+          "slug": "350gr_silk_mc",
+          "name": "350 g/m² silkematt"
+        },
+        {
+          "slug": "400gr_silk_mc",
+          "name": "400 g/m² silkematt"
+        },
+        {
+          "slug": "300gr_tintoretto_gesso",
+          "name": "300 g/m² Tintoretto Gesso"
+        },
+        {
+          "slug": "280gr_linnen",
+          "name": "280 g/m² Constellation Snow (lin)"
+        },
+        {
+          "slug": "300gr_metallic_pearl",
+          "name": "300 g/m² Sirio metallic perle"
+        },
+        {
+          "slug": "350gr_metallic_white",
+          "name": "350 g/m² Sirio metallic hvit"
+        },
+        {
+          "slug": "300gr_metallic_silver",
+          "name": "300 g/m² Sirio metallic sølv"
+        },
+        {
+          "slug": "300gr_metallic_gold",
+          "name": "300 g/m² Sirio metallic gull"
+        },
+        {
+          "slug": "290gr_sirio_color_nero",
+          "name": "290 g/m² Sirio Colour Nero"
+        },
+        {
+          "slug": "295gr_paperwise_earth_pact_natural",
+          "name": "295 g/m² Paperwise® Earth Pact Natural"
+        },
+        {
+          "slug": "300gr_synaps",
+          "name": "300 g/m² Synaps® (Rivebestandig og vannbestandig)"
+        },
+        {
+          "slug": "300gr_yupo_blue_ypi",
+          "name": "234 g/m² YUPOBlue® - rivebestandig, vannbestandig"
+        },
+        {
+          "slug": "350gr_yupo_blue_ypi",
+          "name": "276 g/m² YUPOBlue® - rivebestandig, vannbestandig"
+        },
+        {
+          "slug": "400gr_yupo",
+          "name": "319 g/m² YUPOBlue® - rivebestandig, vannbestandig"
+        },
+        {
+          "slug": "300gr_recystar",
+          "name": "300 g/m² BalancePure®"
+        },
+        {
+          "slug": "300gr_biotop",
+          "name": "300 g/m² Bio Top 3® naturlig"
+        },
+        {
+          "slug": "300gr_recystar_nature",
+          "name": "300 g/m² RecyStar® Nature"
+        },
+        {
+          "slug": "290gr_kraft_muskat",
+          "name": "290 g/m² kraft muskat"
+        },
+        {
+          "slug": "300gr_hvo",
+          "name": "300 g/m² ubestrøket (skrivbar)"
+        },
+        {
+          "slug": "300gr_hvo_nk",
+          "name": "300 g/m² ubestrøket offset naturlig kartong"
+        },
+        {
+          "slug": "350gr_hvo",
+          "name": "350 g/m² ubestrøket (skrivbar)"
+        },
+        {
+          "slug": "350gr_hvo_nk",
+          "name": "350 g/m² ubestrøket offset naturlig kartong"
+        },
+        {
+          "slug": "400gr_hvo_nk",
+          "name": "400 g/m² offset (skrivbar) naturlig kartong"
+        },
+        {
+          "slug": "300gr_sbs_symbol_card",
+          "name": "300 g/m² Symbol Card ensidig bestrøket sulfatkartong"
+        },
+        {
+          "slug": "300gr_sbs",
+          "name": "300 g/m² MultiCard® ensidig sulfatkartong"
+        },
+        {
+          "slug": "350gr_sbs",
+          "name": "350 g/m² MultiCard® ensidig sulfatkartong"
+        },
+        {
+          "slug": "350gr_sbd",
+          "name": "350 g/m² MultiCard® dobbeltsidig sulfatkartong"
+        },
+        {
+          "slug": "400gr_sbd",
+          "name": "400 g/m² dobbeltsidig bestrøket sulfatkartong"
+        },
+        {
+          "slug": "300gr_cotton_max_white",
+          "name": "300 g/m² Gmund Cotton Max Hvit"
+        },
+        {
+          "slug": "300gr_cotton_linen_cream",
+          "name": "300 g/m² Gmund Cotton Linen Krem"
+        },
+        {
+          "slug": "300gr_cotton_gentlemen_blue",
+          "name": "300 g/m² Gmund Cotton Gentlemen Blå"
+        },
+        {
+          "slug": "250gr_yupo",
+          "name": "200 g/m² YUPOBlue® - rivebestandig, vannbestandig"
+        }
+      ]
+    },
+    {
+      "slug": "spot_finish",
+      "title": "Spotfinish",
+      "options": [
+        {
+          "slug": "none",
+          "name": "Ingen"
+        },
+        {
+          "slug": "foil_gold",
+          "name": "Gullfolie"
+        },
+        {
+          "slug": "foil_silver",
+          "name": "Sølvfolie"
+        },
+        {
+          "slug": "foil_rose",
+          "name": "Roségullfolie"
+        },
+        {
+          "slug": "foil_copper",
+          "name": "Kobberfolie"
+        },
+        {
+          "slug": "foil_glitter",
+          "name": "Glitterfolie"
+        },
+        {
+          "slug": "foil_rainbow",
+          "name": "Regnbuefolie"
+        },
+        {
+          "slug": "gloss_uv_varnish",
+          "name": "Glansende UV-lakk"
+        }
+      ]
+    }
+  ],
+  "excludes": [
+    [
+      {
+        "options": [
+          "foil_glitter",
+          "foil_gold",
+          "foil_rainbow",
+          "foil_copper",
+          "foil_rose",
+          "foil_silver",
+          "partial_gloss",
+          "embossed_partial_gloss_40",
+          "embossed_partial_gloss_80"
+        ],
+        "property": "spot_finish"
+      },
+      {
+        "options": [
+          "350gr_hvo",
+          "300gr_hvo",
+          "540gr_two_layer_multiloft_kraft",
+          "480gr_two_layer_multiloft_ultra_white",
+          "540gr_two_layer_multiloft_black",
+          "480gr_two_layer_multiloft_white",
+          "810gr_three_layer_multiloft_kraft",
+          "810gr_three_layer_multiloft_black",
+          "750gr_three_layer_multiloft_white",
+          "750gr_three_layer_multiloft_ultra_white",
+          "350gr_hvo_nk",
+          "400gr_hvo_nk",
+          "300gr_recystar",
+          "300gr_recystar_nature",
+          "300gr_cotton_max_white",
+          "300gr_cotton_linen_cream",
+          "300gr_cotton_new_grey",
+          "300gr_cotton_gentlemen_blue",
+          "290gr_kraft_muskat",
+          "440gr_kraft_muskat",
+          "350gr_atelier",
+          "300gr_hvo_nk"
+        ],
+        "property": "material"
+      }
+    ],
+    [
+      {
+        "options": [],
+        "property": "spot_finish"
+      },
+      {
+        "options": [
+          "350gr_hvo",
+          "300gr_hvo",
+          "300gr_hvo_nk",
+          "350gr_hvo_nk",
+          "400gr_hvo_nk",
+          "350gr_atelier"
+        ],
+        "property": "material"
+      }
+    ],
+    [
+      {
+        "options": [
+          "foil_glitter",
+          "foil_gold",
+          "foil_rainbow",
+          "foil_copper",
+          "foil_rose",
+          "foil_silver",
+          "embossed_partial_gloss_40",
+          "embossed_partial_gloss_80"
+        ],
+        "property": "spot_finish"
+      },
+      {
+        "options": ["offset"],
+        "property": "printingmethod"
+      }
+    ],
+    [
+      {
+        "options": [
+          "300gr_recycled",
+          "300gr_metallic_white",
+          "300gr_metallic_pearl",
+          "300gr_metallic_silver",
+          "300gr_metallic_gold",
+          "280gr_kraft",
+          "381gr_kraft",
+          "300gr_yupo_blue_ypi",
+          "350gr_yupo_blue_ypi",
+          "250gr_sirio_materica_clay",
+          "290gr_sirio_color_pietra",
+          "290gr_sirio_color_nero",
+          "500gr_sbd",
+          "400gr_yupo",
+          "295gr_paperwise_earth_pact_natural",
+          "300gr_conqueror_vergé_(crème)_high_white",
+          "300gr_conqueror_vergé_diamond_white",
+          "200gr_yupo",
+          "300gr_recystar",
+          "300gr_recystar_nature",
+          "300gr_cotton_max_white",
+          "300gr_cotton_linen_cream",
+          "300gr_cotton_new_grey",
+          "300gr_cotton_gentlemen_blue",
+          "300gr_hvo_nk",
+          "350gr_hvo",
+          "400gr_hvo_nk",
+          "290gr_kraft_muskat",
+          "440gr_kraft_muskat",
+          "350gr_atelier",
+          "300gr_biotop",
+          "250gr_yupo",
+          "400gr_gesatineerd_mc",
+          "300gr_synaps",
+          "350gr_hvo_nk"
+        ],
+        "property": "material"
+      },
+      {
+        "options": [
+          "group_foils",
+          "foil_gold",
+          "foil_glitter",
+          "foil_rainbow",
+          "foil_copper",
+          "foil_rose",
+          "foil_silver",
+          "group_partial_gloss",
+          "embossed_partial_gloss_40",
+          "embossed_partial_gloss_80",
+          "partial_gloss"
+        ],
+        "property": "spot_finish"
+      }
+    ],
+    [
+      {
+        "options": [
+          "250gr_tintoretto_gesso",
+          "280gr_constalations_snow_(linnen)",
+          "280gr_kraftpapier",
+          "300gr_ice_silver_metallic",
+          "300gr_kraftpapier",
+          "500gr_sbd",
+          "280gr_kraft",
+          "381gr_kraft",
+          "300gr_tintoretto_gesso",
+          "280gr_linnen",
+          "300gr_metallic_white",
+          "350gr_metallic_white",
+          "300gr_metallic_pearl",
+          "300gr_metallic_gold",
+          "300gr_yupo_blue_ypi",
+          "350gr_yupo_blue_ypi",
+          "350gr_sbs",
+          "760gr_pvc",
+          "350gr_silk_mc",
+          "300gr_metallic_silver",
+          "250gr_sirio_materica_clay",
+          "290gr_sirio_color_pietra",
+          "290gr_sirio_color_nero",
+          "400gr_yupo",
+          "295gr_paperwise_earth_pact_natural",
+          "300gr_silk_mc",
+          "200gr_yupo",
+          "300gr_sbs_symbol_card",
+          "300gr_cotton_gentlemen_blue",
+          "300gr_cotton_new_grey",
+          "300gr_cotton_linen_cream",
+          "300gr_cotton_max_white",
+          "540gr_two_layer_multiloft_kraft",
+          "480gr_two_layer_multiloft_ultra_white",
+          "480gr_two_layer_multiloft_white",
+          "540gr_two_layer_multiloft_black",
+          "810gr_three_layer_multiloft_kraft",
+          "810gr_three_layer_multiloft_black",
+          "750gr_three_layer_multiloft_white",
+          "750gr_three_layer_multiloft_ultra_white",
+          "350gr_sbs_invercote",
+          "400gr_hvo_nk",
+          "300gr_synaps",
+          "350gr_atelier",
+          "290gr_kraft_muskat",
+          "440gr_kraft_muskat",
+          "170gr_gesatineerd_mc",
+          "250gr_yupo",
+          "300gr_sbs_invercote",
+          "400gr_gesatineerd_mc",
+          "350gr_hvo_nk",
+          "350gr_hvo",
+          "300gr_biotop",
+          "300gr_recystar"
+        ],
+        "property": "material"
+      },
+      {
+        "options": ["offset"],
+        "property": "printingmethod"
+      }
+    ],
+    [
+      {
+        "options": ["50_full_color_plus_white", "55_full_color_plus_white"],
+        "property": "printtype"
+      },
+      {
+        "options": [
+          "300gr_gesatineerd_mc",
+          "350gr_gesatineerd_mc",
+          "300gr_silk_mc",
+          "400gr_gesatineerd_mc",
+          "350gr_silk_mc",
+          "400gr_silk_mc",
+          "300gr_recycled",
+          "300gr_biotop",
+          "300gr_sbs",
+          "350gr_sbd",
+          "500gr_sbd",
+          "300gr_tintoretto_gesso",
+          "280gr_linnen",
+          "300gr_metallic_white",
+          "350gr_metallic_white",
+          "300gr_metallic_pearl",
+          "300gr_yupo_blue_ypi",
+          "350gr_yupo_blue_ypi",
+          "400gr_sbd",
+          "400gr_yupo",
+          "300gr_conqueror_vergé_(crème)_high_white",
+          "300gr_conqueror_vergé_diamond_white",
+          "300gr_hvo_nk",
+          "350gr_hvo_nk",
+          "200gr_yupo",
+          "300gr_recystar",
+          "300gr_recystar_nature",
+          "300gr_sbs_symbol_card",
+          "350gr_sbs",
+          "400gr_hvo_nk",
+          "250gr_yupo",
+          "300gr_synaps",
+          "300gr_hvo",
+          "350gr_hvo",
+          "300gr_cotton_max_white",
+          "300gr_cotton_linen_cream",
+          "300gr_cotton_gentlemen_blue"
+        ],
+        "property": "material"
+      }
+    ],
+    [
+      {
+        "options": ["offset"],
+        "property": "printingmethod"
+      },
+      {
+        "options": ["50_full_color_plus_white", "55_full_color_plus_white"],
+        "property": "printtype"
+      }
+    ],
+    [
+      {
+        "options": [
+          "290gr_sirio_color_nero",
+          "540gr_two_layer_multiloft_black",
+          "810gr_three_layer_multiloft_black"
+        ],
+        "property": "material"
+      },
+      {
+        "options": ["44", "40"],
+        "property": "printtype"
+      }
+    ],
+    [
+      {
+        "options": ["10", "20", "30", "11", "22", "33"],
+        "property": "printtype"
+      },
+      {
+        "options": [
+          "300gr_silk_mc",
+          "350gr_silk_mc",
+          "300gr_sbs_symbol_card",
+          "400gr_gesatineerd_mc",
+          "400gr_silk_mc",
+          "300gr_tintoretto_gesso",
+          "280gr_linnen",
+          "280gr_kraft",
+          "540gr_two_layer_multiloft_kraft",
+          "810gr_three_layer_multiloft_kraft",
+          "300gr_metallic_white",
+          "300gr_metallic_pearl",
+          "350gr_metallic_white",
+          "300gr_metallic_silver",
+          "300gr_metallic_gold",
+          "200gr_yupo",
+          "300gr_yupo_blue_ypi",
+          "290gr_sirio_color_pietra",
+          "250gr_sirio_materica_clay",
+          "290gr_sirio_color_nero",
+          "295gr_paperwise_earth_pact_natural",
+          "400gr_yupo",
+          "300gr_synaps",
+          "350gr_sbs_invercote",
+          "300gr_cotton_max_white",
+          "300gr_cotton_linen_cream",
+          "300gr_cotton_new_grey",
+          "300gr_cotton_gentlemen_blue",
+          "480gr_two_layer_multiloft_ultra_white",
+          "480gr_two_layer_multiloft_white",
+          "540gr_two_layer_multiloft_black",
+          "750gr_three_layer_multiloft_ultra_white",
+          "750gr_three_layer_multiloft_white",
+          "810gr_three_layer_multiloft_black",
+          "500gr_sbd",
+          "290gr_kraft_muskat",
+          "440gr_kraft_muskat",
+          "350gr_atelier",
+          "250gr_yupo"
+        ],
+        "property": "material"
+      }
+    ],
+    [
+      {
+        "options": ["partial_gloss"],
+        "property": "spot_finish"
+      },
+      {
+        "options": ["offset"],
+        "property": "printingmethod"
+      }
+    ]
+  ]
+}

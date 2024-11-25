@@ -34,5 +34,6 @@ To test the project for yourself, you'll need NodeJS and a local browser.
 1. `cd ./print-product`
 2. `npm i`
 3. `npm run dev`
+4. Visit the url with the port returned in the terminal
 
 A more extensive document can be found in the `./print-product` folder.
